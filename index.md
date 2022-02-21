@@ -1,4 +1,4 @@
-## <Project Topic>
+## Project Topic
 
 ### Intro/Background
 
