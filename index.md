@@ -6,10 +6,27 @@
 
 ### Methods
 
-### Potential results and Discussion
+### Potential results and Discussiont
 
 ### References 
 At least three references
 
-### Proposed timeline from start to finish and list each project members’ responsibilities
+### Proposed timeline and Responsibilities
+
+| Dates       | Deliverable |
+| ----------- | ----------- |
+|             |             |
+|             |             |
+
+
+| Member             | Responsiblity |
+| ------------------ | ------------- |
+| Adrian Thinnyun    | Title         |
+| Brahmi Dwivedi     | Text          |
+| Omkar Prabhu       | Text          |
+| Rahul Shenoy       | Text          |
+| Yashodeep Mahapata | Text          |
+
+
+
 
