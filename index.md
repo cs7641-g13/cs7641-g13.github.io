@@ -6,7 +6,7 @@ Basketball is team sport where a game is played among two teams with 5 players e
 
 There are few famous players like Michael Jordan, Lebron James, Kobe Bryant, etc. and naturally there is always the debate of who is the Greatet Of All Time (G.O.A.T). This debate literally goes on till today even if people recognize that all of them are great players in this game. 
 
---- insert meme GOAT --- 
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">LeBron: &quot;At that moment I was like I&#39;m the greatest basketball player people have ever seen.&quot; <br><br>Michael Jordan: <a href="https://t.co/mBmuP8d1H9">pic.twitter.com/mBmuP8d1H9</a></p>&mdash; NBA Memes (@NBAMemes) <a href="https://twitter.com/NBAMemes/status/1496001690549768197?ref_src=twsrc%5Etfw">February 22, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 The players also play specific positions like Point Guard, Shooting Guard, Power Forward, Small Forward, and Center. With time the nature of how players play the game also changed. For example the game now involves a players shooting 3 pointers. A big man (center) - Karl Anthony Towns won this years 3 point contest! 
 
