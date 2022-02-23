@@ -10,13 +10,11 @@ There are few famous players like Michael Jordan, Lebron James, Kobe Bryant, etc
 
 The players also play specific positions like Point Guard, Shooting Guard, Power Forward, Small Forward, and Center. With time the nature of how players play the game also changed. For example the game now involves a players shooting 3 pointers. A big man (center) - Karl Anthony Towns won this years 3 point contest! 
 
--- insert meme Steph ---
-
 Thus rather than using traditional positions, it would be interesting to know how player relate to others based on their statistics to aid in comparison of players and possibly helping in the G.O.A.T debate!     
 
 Aside from this betting on games is also a aspect of the league with them promoting it like [NBABet](https://www.nba.com/nbabet), [FanDuel](https://www.fanduel.com/tnt), etc.
 
--- insert meme Chuck ---
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Charles Barkley using his NBA predictions machine: <a href="https://t.co/EFYNmIBa9r">pic.twitter.com/EFYNmIBa9r</a></p>&mdash; InsideHoops.com (@InsideHoops) <a href="https://twitter.com/InsideHoops/status/1302454839369256967?ref_src=twsrc%5Etfw">September 6, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 While people usually just love watching games, betting and winning usually adds on to the excitement. Generally as the season progresses its becomes obvious as to which teams are going to be leader. For eg. in this season the Pheonix Suns and the Golden State Warriors are clear leaders in the Western conference. So for games against these teams against the lower ranked ones the outcomes are obvious. But the games against top teams the outcome is generally difficult to predict but these games are the most exciting ones and generally streams on National TV on broadcasts like TNT, ESPN, etc. Thus using data can help provide better insight for prediciting game outcomes and possibly save money!
 
