@@ -44,6 +44,7 @@ The next problem that we are solving involves predicting which team wins in a co
 ### Proposed timeline and Responsibilities
 
 | Dates       | Deliverable                     |
+| ----------- | ------------------------------- |
 | 3/3/2022    | Relevant Data Collection        |
 | 3/10/2022   | Data Cleaning/Pruning           |
 | 3/24/2022   | Data Analysis/ Model Generation |
