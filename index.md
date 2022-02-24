@@ -4,7 +4,7 @@
 
 The National Basketball Association(NBA) is professional basketball league in the North America with 30 teams divided into 2 conferences - East and West.
 
-There are few famous players like Michael Jordan, Lebron James, etc. and naturally there is always the debate of who is the Greatet Of All Time(G.O.A.T).
+There are few famous players like Michael Jordan, Lebron James, etc. and naturally there is always the debate of who is the Greatest Of All Time(G.O.A.T).
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">LeBron: &quot;At that moment I was like I&#39;m the greatest basketball player people have ever seen.&quot; <br><br>Michael Jordan: <a href="https://t.co/mBmuP8d1H9">pic.twitter.com/mBmuP8d1H9</a></p>&mdash; NBA Memes (@NBAMemes) <a href="https://twitter.com/NBAMemes/status/1496001690549768197?ref_src=twsrc%5Etfw">February 22, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
@@ -14,17 +14,19 @@ Aside from this betting on games is also a aspect which the league also promotes
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Charles Barkley guarantees Bucks win<br><br>Heat fans: <a href="https://t.co/18gk7CAQ3d">pic.twitter.com/18gk7CAQ3d</a></p>&mdash; NBA Memes (@NBAMemes) <a href="https://twitter.com/NBAMemes/status/1397024441368932352?ref_src=twsrc%5Etfw">May 25, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-Generally as the season progresses its becomes obvious as to which teams are going to be leader. So for games against these teams against the lower ranked ones the outcomes are obvious. But the games against top teams the outcome is generally difficult to predict and these are the most exciting ones. Thus using data can help provide better insight for prediciting game outcomes and possibly save money!
+Often, as the season progresses, it's easy to spot which teams are going to be in the lead, and for games played by these high performing teams against lower ranked teams, the outcomes are predictable. The outcome of a game between two highly ranket teams though is generally difficult to predict and these games are the most exciting. Using data can help provide better insight for prediciting game outcomes and possibly save money!
 
 ### Problem Definition
 
-Given statistics for players and game history, roster per team, etc. predict for a game between two teams A and B this season what is the probability that team A will win.
+Given statistics for players and game history, roster per team, etc. for a game between two teams A and B this season, predict the outcome of the game.
 
-Datasets:
+Dataset description:
 
 We have the following data available:
 - Dataset with features around 650 players participating in the NBA. Each player in the dataset has 26 features associated with them across multiple seasons and teams. These features include the basic information of the player like age, position on the court, etc. and much more complex features like the turnover rate, shooting percentage, etc.
+Source: 
 - Game history for teams over multiple seasons.
+Source: 
 
 ### Methods
 
