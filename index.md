@@ -25,6 +25,11 @@ P1 - Given a players statistics, group players into clusters.
 P2 - Given these statistics for players and game history, etc. predict if a game between two teams A and B this season what is the probability that team A will win. 
 
 Datasets:
+
+We have chosen the following datasets for achieving the above goals. For grouping players into clusters based on statistics, our input dataset has featrues around 650 players participating in the NBA. Each player in the dataset has 26 features associated with them. These features include the basic information of the player like age, position on the court, etc. and much more complex features like the turnover rate, usage rate, shooting percentage, etc.
+
+The next problem that we are solving involves predicting which team wins in a contest. We have our dataset for this which involves the players in a given team, their stats, the team history, etc. Considering the plethora of data we have, we plan on accumulating features that we feel most heavily influence the outcome of a contest.
+
 - https://www.basketball-reference.com
 - https://www.nbastuffer.com
 
