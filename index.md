@@ -24,8 +24,10 @@ Dataset description:
 
 We have the following data available:
 - Dataset with features around 650 players participating in the NBA. Each player in the dataset has 26 features associated with them across multiple seasons and teams. These features include the basic information of the player like age, position on the court, etc. and much more complex features like the turnover rate, shooting percentage, etc.
+
 Source: 
 - Game history for teams over multiple seasons.
+
 Source: 
 
 ### Methods
