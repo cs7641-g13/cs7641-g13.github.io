@@ -30,31 +30,35 @@ We have chosen the following datasets for achieving the above goals. For groupin
 
 The next problem that we are solving involves predicting which team wins in a contest. We have our dataset for this which involves the players in a given team, their stats, the team history, etc. Considering the plethora of data we have, we plan on accumulating features that we feel most heavily influence the outcome of a contest.
 
-- https://www.basketball-reference.com
-- https://www.nbastuffer.com
-
 ### Methods
 
 ### Potential results and Discussion
 
-### References 
-At least three references
+### References
+
+- https://www.basketball-reference.com/
+- https://www.nbastuffer.com/
+- https://towardsdatascience.com/predicting-the-outcome-of-nba-games-with-machine-learning-a810bb768f20
+
 
 ### Proposed timeline and Responsibilities
 
-| Dates       | Deliverable |
-| ----------- | ----------- |
-|             |             |
-|             |             |
+| Dates       | Deliverable                     |
+| 3/3/2022    | Relevant Data Collection        |
+| 3/10/2022   | Data Cleaning/Pruning           |
+| 3/24/2022   | Data Analysis/ Model Generation |
+| 4/7/2022    | Predicational Analysis on Model |
+| 4/21/2022   | Project Video                   |
+| 4/26/2022   | Final Project Report Video      |
 
 
-| Member             | Responsiblity |
-| ------------------ | ------------- |
-| Adrian Thinnyun    | Text          |
-| Brahmi Dwivedi     | Text          |
-| Omkar Prabhu       | Text          |
-| Rahul Shenoy       | Text          |
-| Yashodeep Mahapata | Text          |
+| Member             | Responsiblity                           |
+| ------------------ | --------------------------------------- |
+| Adrian Thinnyun    | Predictional Analysis/ Project Video    |
+| Brahmi Dwivedi     | Data Collection/Data Cleaning           |
+| Omkar Prabhu       | Predictional Analysis/ Model Generation |
+| Rahul Shenoy       | Data Cleaning/ Model Generation         |
+| Yashodeep Mahapata | Project Report/ Predictional Analysis   |
 
 
 
