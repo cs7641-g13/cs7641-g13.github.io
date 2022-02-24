@@ -35,7 +35,8 @@ The next problem that we are solving involves predicting which team wins in a co
 We are planning to employ both supervised and unsupervised approaches for our problem. 
 
 In unsupervised methods:
-We plan to implement Principal Component Analysis (PCA) as a “preprocessing step”, which should help us reduce the dimensionality of features to use for clustering/classification. We will also use k-means clustering to see if we can classify the data into meaningful clusters to identify hidden patterns.
+
+We plan to implement **Principal Component Analysis** (PCA) as a “preprocessing step”, which should help us reduce the dimensionality of features to use for clustering/classification. We will also use **k-means clustering** to see if we can classify the data into meaningful clusters to identify hidden patterns.
 
 In supervised methods, we plan to implement:
 - Support Vector Machine
