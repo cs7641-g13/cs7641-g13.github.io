@@ -1,5 +1,7 @@
 ## NBA Player Clustering and Game Win Prediction
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/9ehn7Ot--Ds" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ### Intro/Background
 
 The National Basketball Association (NBA) is a professional North American basketball league with 30 teams divided into 2 conferences - East and West.
