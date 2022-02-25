@@ -4,17 +4,17 @@
 
 The National Basketball Association (NBA) is a professional North American basketball league with 30 teams divided into 2 conferences - East and West.
 
-There are several famous players like Michael Jordan, Lebron James, etc. and fans often debate over who is the Greatest Of All Time(G.O.A.T).
+There are several famous players, like Michael Jordan and Lebron James, and fans often debate over who is the Greatest Of All Time(G.O.A.T).
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">LeBron: &quot;At that moment I was like I&#39;m the greatest basketball player people have ever seen.&quot; <br><br>Michael Jordan: <a href="https://t.co/mBmuP8d1H9">pic.twitter.com/mBmuP8d1H9</a></p>&mdash; NBA Memes (@NBAMemes) <a href="https://twitter.com/NBAMemes/status/1496001690549768197?ref_src=twsrc%5Etfw">February 22, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-The players also play specific positions like Point Guard, Center, etc. With time the nature of how players play the game also changed. For example the game now involves players shooting more 3 pointers. Thus rather than using traditional positions, it would be interesting to know how players relate to each other based on their statistics to aid in comparison.
+The players also play specific positions like Point Guard, Center, etc. With time the nature of how players play the game has also changed. For example the game now involves players shooting more 3 pointers. Thus rather than using traditional positions, it would be interesting to know how players relate to each other based on their statistics to aid in comparison.
 
-Aside from this betting on games is also an aspect which the league also promotes like [NBABet](https://www.nba.com/nbabet), [FanDuel](https://www.fanduel.com/tnt), etc.
+Aside from this, betting on games is also an aspect which the league promotes like [NBABet](https://www.nba.com/nbabet), [FanDuel](https://www.fanduel.com/tnt), etc.
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Charles Barkley guarantees Bucks win<br><br>Heat fans: <a href="https://t.co/18gk7CAQ3d">pic.twitter.com/18gk7CAQ3d</a></p>&mdash; NBA Memes (@NBAMemes) <a href="https://twitter.com/NBAMemes/status/1397024441368932352?ref_src=twsrc%5Etfw">May 25, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-Often, as the season progresses, it's easy to spot which teams are going to be in the lead, and for games played by these high performing teams against lower ranked teams, the outcomes are predictable. The outcome of a game between two highly ranked teams though is generally difficult to predict and these games are the most exciting. Using data can help provide better insight for predicting game outcomes and possibly making money!
+Often, as the season progresses, it's easy to spot which teams are going to be in the lead, and for games played by these high performing teams against lower ranking teams, the outcomes are predictable. The outcome of a game between two highly ranked teams though is generally difficult to predict and these games are the most exciting. Using data can help provide better insight for predicting game outcomes and possibly making money!
 
 ### Problem Definition
 
