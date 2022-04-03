@@ -32,7 +32,15 @@ Source: https://www.nbastuffer.com/
 
 Source: https://www.basketball-reference.com/
 
+### Data collection
+
+COMPLETE THIS
+
 ### Methods
+
+WRITE ABOUT THINGS DONE FOR NOW
+
+WRITE ABOUT THINGS TODO
 
 We are planning to employ both supervised and unsupervised approaches for our problem. 
 
@@ -47,7 +55,9 @@ In supervised methods, we plan to implement:
 
 We will use the outcome of PCA for supervised methods, and analyze how it affects the outcome, by comparing with supervised outcomes without the use of PCA.
 
-### Potential results and Discussion
+### Results and Discussion
+
+WRITE MORE ABOUT THE RESULTS
 
 We expect the outcome of PCA to compress the dataset, potentially making supervised methods faster, but it may compromise with the model’s performance. K-means clustering will give us insight into patterns in the dataset. We expect the supervised outcomes to be better without PCA, as PCA might lead to loss of information(depending on the extent of dimensionality reduction).
 
