@@ -32,21 +32,52 @@ Source: https://www.nbastuffer.com/
 
 Source: https://www.basketball-reference.com/
 
-### Data collection
+### Data collection & Preprocessing
 
-COMPLETE THIS
+#### NBA Player Clustering
+
+For the player clustering we considered the basketball stats from two different sources:
+1. 2021-22 Season Advanced Stats: https://www.basketball-reference.com//leagues/NBA_2021_advanced.html
+2. 2021-22 Season Stats: https://www.basketball-reference.com//leagues/NBA_2021_totals.html
+
+The Season Stats contains simpler metrics like 3-pointers made, field-goals made, rebounds, blocks, etc. On further exploration we found that there are other advanced statistics like offensive rebound percentage, offensive win shares, etc. which we can use. Thus the combined features list is as follows:
+
+![image](https://user-images.githubusercontent.com/23053768/161634743-c122b059-d762-4d63-85ef-4cc3bb34937c.png)
+
+![image](https://user-images.githubusercontent.com/23053768/161634774-1345eb25-f275-4c87-8ea4-7cf6086e3ec6.png)
+
+Now, the dataset wasn't perfect, so first we did some inital cleaning by removing rows which has invalid values such as -inf, inf or nan and gave us the following set.
+
+![image](https://user-images.githubusercontent.com/23053768/161635342-7e4edd84-d420-459e-ab2a-125ea756fa2c.png)
+
+In each season there are players who get traded i.e. they start the season with a certain team but mid-season they go to another team. Thus this dataset would contains 3 rows (for the older team, newer team and a total stat record) for the players as shown below
+
+![image](https://user-images.githubusercontent.com/23053768/161635982-ec6d2ee0-a6e4-4850-a996-6164bc5f79ba.png)
+
+Thus to reduce this to a single datapoint we just used the team for which the player has played to most games. The reason for this decision was that player perform differently in different team and total would not give a good estimate, also more no. of games a player plays the better the metric value represents the style of play.
+
+![image](https://user-images.githubusercontent.com/23053768/161636264-37e9bb75-82ce-4720-9d0c-bdbe3b0c9c27.png)
+
+Finally, we dropped the players which have < 25 games in this season because of the same reason mentioned before.
+
+![image](https://user-images.githubusercontent.com/23053768/161636330-10b9e92d-b41e-4e3b-8c35-4900b794133d.png)
 
 ### Methods
 
 WRITE ABOUT THINGS DONE FOR NOW
 
-WRITE ABOUT THINGS TODO
-
-We are planning to employ both supervised and unsupervised approaches for our problem. 
+---- REMOVE OR EDIT THIS ----
 
 In unsupervised methods:
 
 We plan to implement **Principal Component Analysis** (PCA) as a “preprocessing step”, which should help us reduce the dimensionality of features to use for clustering/classification. We will also use **k-means clustering** to see if we can classify the data into meaningful clusters to identify hidden patterns.
+
+---- REMOVE OR EDIT THIS ----
+
+
+WRITE ABOUT THINGS TODO
+
+A simple extension 
 
 In supervised methods, we plan to implement:
 - Support Vector Machine
@@ -74,17 +105,17 @@ We expect the outcome of PCA to compress the dataset, potentially making supervi
 | ----------- | ------------------------------- |
 | 3/3/2022    | Relevant Data Collection        |
 | 3/10/2022   | Data Cleaning/Pruning           |
-| 3/24/2022   | Data Analysis/Model Generation |
-| 4/7/2022    | Predicational Analysis on Model |
-| 4/21/2022   | Project Video                   |
-| 4/26/2022   | Final Project Report Video      |
+| 3/24/2022   | Data Analysis & Clustering      |
+| 4/7/2022    | Clustering results and Start with Data curation for supervised method |
+| 4/21/2022   | Supervised Method  & Project Video |
+| 4/26/2022   | Final Project Report      |
 
 
 | Member             | Responsiblity                           |
 | ------------------ | --------------------------------------- |
 | Adrian Thinnyun    | Predictional Analysis/Project Video    |
 | Brahmi Dwivedi     | Data Collection/Data Cleaning           |
-| Omkar Prabhu       | Predictional Analysis/Model Generation |
+| Omkar Prabhu       | Unsupervised Data Curation and Inital Clustering method - PCA & KMeans |
 | Rahul Shenoy       | Data Cleaning/Model Generation         |
 | Yashodeep Mahapata | Project Report/Predictional Analysis   |
 
