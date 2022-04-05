@@ -62,6 +62,8 @@ Finally, we dropped the players which have < 25 games in this season because of 
 
 ![image](https://user-images.githubusercontent.com/23053768/161636330-10b9e92d-b41e-4e3b-8c35-4900b794133d.png)
 
+#### Game Prediction
+
 For game data, we scraped data from these two sources:
 1. https://www.basketball-reference.com/leagues/NBA_2021_games.html
 2. https://www.basketball-reference.com/leagues/NBA_2021.html - Per Game Statistics
