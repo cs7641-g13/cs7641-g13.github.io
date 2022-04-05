@@ -92,6 +92,24 @@ WRITE MORE ABOUT THE RESULTS
 
 We expect the outcome of PCA to compress the dataset, potentially making supervised methods faster, but it may compromise with the model’s performance. K-means clustering will give us insight into patterns in the dataset. We expect the supervised outcomes to be better without PCA, as PCA might lead to loss of information(depending on the extent of dimensionality reduction).
 
+#### K-Means analysis
+
+The dataset used for K-Means analysis has 5 features obtained after the feature reduction. The dataset was divided into clusters ranging from 4 to 12 clusters. The elbow method was then used to determine the best number of clusters which came out to be 7.  
+
+![image](https://user-images.githubusercontent.com/25253566/161800360-b2929900-2db1-4967-aa93-5d3e62dda8ad.png)
+
+Because the dataset has 5 features, the clusters cannot be represented on a graph. So for the purpose of demonstration, here are the clusters which just have 2 features out of the 5 plotted. These 2 features have been selected because they retain 94% of the variance of the dataset. This would pretty much give us a good idea around how the clustering has been done.
+
+![image](https://user-images.githubusercontent.com/25253566/161800524-a3980b7c-a99b-4af7-8c4b-9db1eba09b33.png)
+
+As we can see, a few of the clusters are really well defined (the blue, black, red, purple and yellow) while the remaining 2 are a bit scattered around. The popular metric scores around clustering for this data have been evaluated as follows:
+
+Davies-Bouldin index: 0.781
+Silhouette coefficient: 0.415
+
+Values closer to 0 imply better clustering in the case of Davies-Bouldin index. The current score reflects the clustering done in this manner. The silhouette score also tends a bit towards 0, which reflects that the clusters are not that well distanced from each other.
+
+
 ### References
 
 - https://www.basketball-reference.com/
