@@ -87,6 +87,9 @@ We will use the outcome of PCA for supervised methods, and analyze how it affect
 
 After applying PCA to our dataset, our original set of 45 features was reduced down to just 5 features, constituting a nearly 90% decrease in the number of features. These features retain 99% of the variance of the original data, and thus should be suitable for our further analyses.
 
+![image](https://user-images.githubusercontent.com/39341245/161835399-e536a6b7-cc78-41f7-b878-47580445934a.png)
+
+
 #### K-Means analysis
 
 The dataset used for K-Means analysis has 5 features obtained after the feature reduction. The dataset was divided into clusters ranging from 4 to 12 clusters. The elbow method was then used to determine the best number of clusters which came out to be 7.  
