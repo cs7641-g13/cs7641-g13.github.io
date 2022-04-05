@@ -106,29 +106,29 @@ Values closer to 0 imply better clustering in the case of Davies-Bouldin index. 
 
 #### NBA Player Clustering Discussion
 
-The first observation was that the player clustered together did not have the same "traditional" positions i.e each cluster has a mix of players in different positions. 
+The first observation was that the players clustered together did not have the same "traditional" positions i.e each cluster has a mix of players in different positions. 
 
 Now Cluster=5 pops out with only 21 players, this cluster in my opinion represents players with distinct performances in the season. Eg. Giannis won the finals MVP, Steph Curry was the scoring leader, Jokic won the regular season MVP, etc. [4]. Players like Bradley Beal, Luka Doncic, etc. were in the All NBA teams. Other players like Julius Randle, Russel Westbrook, etc. were in the MVP conversation [5]
 
 ![image](https://user-images.githubusercontent.com/23053768/161846931-8a39c4d9-5453-43a2-bbe1-8ca7d29f75a4.png)
 
-Cluster 2 could represent the next best set of players with LeBron, Kyrie Irving, Joel Embid who made the All-NBA teams and in general the list consists of players that are considers as stars in the league.
+Cluster 2 could represent the next set of top-players with LeBron, Kyrie Irving, Joel Embid, etc. who made the All-NBA teams. In general the list consists of players that are considers as stars in the league.
 
 ![image](https://user-images.githubusercontent.com/23053768/161848812-dae16a3a-7f58-434d-a452-f49139fac5b0.png)
 
-Cluster 6 consists of player that contribute a lot to the team like Lamelo Ball, Reggie Jackson but don't have a consistently high impact.  Notable names which are superstars and are in this category are Kevin Durant and James Harden, both of which had been sidelined in the season due to injuries and is  possible a reason of them being in this cluster rather than Cluster 5 or 2. 
+Cluster 6 consists of players that contribute a lot to the team like Lamelo Ball, Reggie Jackson but don't have a consistently high impact.  Notable names, which are superstars and in this category are Kevin Durant and James Harden, both of which had been sidelined in the season due to injuries and is  possible a reason of them being in this cluster rather than Cluster 5 or 2. 
 
 ![image](https://user-images.githubusercontent.com/23053768/161849499-beb42b34-834f-4a6f-9823-aafdc0540752.png)
 
-Cluster 0 seems to consist of player that generally have low scoring performance and come off the bench and are backups considered in the 2nd or 3rd unit of a team.
+Cluster 0 seems to consist of players that generally have low scoring performances, come off the bench and are considered as backups in the 2nd or 3rd unit of a team.
 
 ![image](https://user-images.githubusercontent.com/23053768/161850116-540d4fde-0081-45e3-a2dd-a0c81d5aa787.png)
 
-Cluster 1 could be players are support the players in cluster 2, 5 and 6 with players like Lonzo Ball, Carmelo Anthony, Draymond Green, etc. 
+Cluster 1 could be players that support the players in cluster 2, 5 and 6 with players like Lonzo Ball, Carmelo Anthony, Draymond Green, etc. 
 
 ![image](https://user-images.githubusercontent.com/23053768/161850376-f18c2242-ea32-4e02-b86d-69aadb642fff.png)
 
-Cluster 3 and 4 seems to have players that generally don't put up big performances with Cluster 4 being the lower end of the spectrum.
+Cluster 3 and 4 seems to have players that generally don't put up big performances with Cluster 4 being the lower end of that spectrum.
 
 ![image](https://user-images.githubusercontent.com/23053768/161850746-1cf7e0c6-e980-4048-a272-bfe207c9c8ef.png)
 
