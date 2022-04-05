@@ -70,14 +70,9 @@ WRITE ABOUT THINGS DONE FOR NOW
 
 In unsupervised methods:
 
-We plan to implement **Principal Component Analysis** (PCA) as a “preprocessing step”, which should help us reduce the dimensionality of features to use for clustering/classification. We will also use **k-means clustering** to see if we can classify the data into meaningful clusters to identify hidden patterns.
+We plan to implement **Principal Component Analysis** (PCA) as a “preprocessing step”, which should help us reduce the dimensionality of features to use for clustering/classification. 
 
----- REMOVE OR EDIT THIS ----
-
-
-WRITE ABOUT THINGS TODO
-
-A simple extension 
+We ran the **K-Means clustering** algorithm on our player data in order to see if we could identify meaningful patterns among players that might help classify them into useful roles/categories. For this purpose, we leveraged the scikit-learn implementation of K-Means. Notably, this implementation does not use the classical EM-style algorithm for K-Means but rather the “Elkan” variation, which exploits the triangle inequality in order to converge more quickly. By default, this implementation assumes a goal of K=8 clusters, but we use the elbow method in order to find a more optimal number of clusters.
 
 In supervised methods, we plan to implement:
 - Support Vector Machine
@@ -88,9 +83,9 @@ We will use the outcome of PCA for supervised methods, and analyze how it affect
 
 ### Results and Discussion
 
-WRITE MORE ABOUT THE RESULTS
+#### PCA analysis
 
-We expect the outcome of PCA to compress the dataset, potentially making supervised methods faster, but it may compromise with the model’s performance. K-means clustering will give us insight into patterns in the dataset. We expect the supervised outcomes to be better without PCA, as PCA might lead to loss of information(depending on the extent of dimensionality reduction).
+After applying PCA to our dataset, our original set of 45 features was reduced down to just 5 features, constituting a nearly 90% decrease in the number of features. These features retain 99% of the variance of the original data, and thus should be suitable for our further analyses.
 
 #### K-Means analysis
 
