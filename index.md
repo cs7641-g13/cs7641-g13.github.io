@@ -62,6 +62,30 @@ Finally, we dropped the players which have < 25 games in this season because of 
 
 ![image](https://user-images.githubusercontent.com/23053768/161636330-10b9e92d-b41e-4e3b-8c35-4900b794133d.png)
 
+For game data, we scraped data from these two sources:
+1. https://www.basketball-reference.com/leagues/NBA_2021_games.html
+2. https://www.basketball-reference.com/leagues/NBA_2021.html - Per Game Statistics
+
+The game statistics contains list of games that took place in the 2020-2021 Season. They have some relevant information like dates, the teams involved, and their scores. Each month had a list of games that had to be merged together to consolidate all the data.
+
+<img width="540" alt="Screenshot_1" src="https://user-images.githubusercontent.com/32405336/161855733-f2f826b9-5d08-4db2-8f7f-9b28220db966.png">
+
+Some cleaning had to be done to this data as well. We excluded any NaN values. And removing any columns that would not provide any benefit to our model such as Attendance or Game Start Time. Finally, we added an Outcome column. This would be our labels for our supervised learning portion.
+
+<img width="523" alt="Screenshot_2" src="https://user-images.githubusercontent.com/32405336/161855761-15c8dc4b-609b-47e0-803d-6de654c3ac4b.png">
+
+There was some more information that we could merge into this dataset that could provide some insight on the outcomes. This came from the Per Game Stats that was pulled from the (2) link. Each team while on Home or Visitor standing had an average statistics across the team, similar to the advanced player stats such as FG (Field Goals) and 3P (3-Point Field Goals). We merged this data into our outcomes dataset based on Visitor or Home. Here's a sample of 5.
+
+<img width="781" alt="Screenshot_3" src="https://user-images.githubusercontent.com/32405336/161855779-0987220c-3226-469a-a1ab-1680c1974b23.png">
+
+We have plenty of features that we can feed into our neural network to get an understanding on the outcomes of games.
+
+An interesting thing to notice is that there was a noteworthy advantage for Home teams. Home teams came out winning more on average compared to Visitors.
+
+<img width="324" alt="Screenshot_4" src="https://user-images.githubusercontent.com/32405336/161855809-f4b9b5b2-be9f-40e6-91b2-ed1b0b321b3d.png">
+
+It will be interesting how this advantage will come into play in our model.
+
 ### Methods
 
 In unsupervised methods:
