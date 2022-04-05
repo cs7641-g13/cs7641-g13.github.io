@@ -104,7 +104,8 @@ Because the dataset has 5 features, the clusters cannot be represented on a grap
 
 As we can see, a few of the clusters are really well defined (the blue, black, red, purple and yellow) while the remaining 2 are a bit scattered around. The popular metric scores around clustering for this data have been evaluated as follows:
 
-Davies-Bouldin index: 0.781
+Davies-Bouldin index: 0.781    
+
 Silhouette coefficient: 0.415
 
 Values closer to 0 imply better clustering in the case of Davies-Bouldin index. The current score reflects the clustering done in this manner. The silhouette score also tends a bit towards 0, which reflects that the clusters are not that well distanced from each other.
