@@ -27,10 +27,10 @@ Dataset description:
 We have the following data available:
 - Dataset with features for around 650 players participating in the NBA. Each player in the dataset has 26 features associated with them across multiple seasons and teams. These features include the basic information of the player like age, position on the court, etc. and much more complex features like the turnover rate, shooting percentage, etc.
 
-Source: https://www.nbastuffer.com/
+Source: [2]
 - Game history for teams over multiple seasons.
 
-Source: https://www.basketball-reference.com/
+Source: [1]
 
 ### Data collection & Preprocessing
 
@@ -63,10 +63,6 @@ Finally, we dropped the players which have < 25 games in this season because of 
 ![image](https://user-images.githubusercontent.com/23053768/161636330-10b9e92d-b41e-4e3b-8c35-4900b794133d.png)
 
 ### Methods
-
-WRITE ABOUT THINGS DONE FOR NOW
-
----- REMOVE OR EDIT THIS ----
 
 In unsupervised methods:
 
@@ -108,12 +104,49 @@ Silhouette coefficient: 0.415
 
 Values closer to 0 imply better clustering in the case of Davies-Bouldin index. The current score reflects the clustering done in this manner. The silhouette score also tends a bit towards 0, which reflects that the clusters are not that well distanced from each other.
 
+#### NBA Player Clustering Discussion
+
+The first observation was that the player clustered together did not have the same "traditional" positions i.e each cluster has a mix of players in different positions. 
+
+Now Cluster=5 pops out with only 21 players, this cluster in my opinion represents players with distinct performances in the season. Eg. Giannis won the finals MVP, Steph Curry was the scoring leader, Jokic won the regular season MVP, etc. [4]. Players like Bradley Beal, Luka Doncic, etc. were in the All NBA teams. Other players like Julius Randle, Russel Westbrook, etc. were in the MVP conversation [5]
+
+![image](https://user-images.githubusercontent.com/23053768/161846931-8a39c4d9-5453-43a2-bbe1-8ca7d29f75a4.png)
+
+Cluster 2 could represent the next best set of players with LeBron, Kyrie Irving, Joel Embid who made the All-NBA teams and in general the list consists of players that are considers as stars in the league.
+
+![image](https://user-images.githubusercontent.com/23053768/161848812-dae16a3a-7f58-434d-a452-f49139fac5b0.png)
+
+Cluster 6 consists of player that contribute a lot to the team like Lamelo Ball, Reggie Jackson but don't have a consistently high impact.  Notable names which are superstars and are in this category are Kevin Durant and James Harden, both of which had been sidelined in the season due to injuries and is  possible a reason of them being in this cluster rather than Cluster 5 or 2. 
+
+![image](https://user-images.githubusercontent.com/23053768/161849499-beb42b34-834f-4a6f-9823-aafdc0540752.png)
+
+Cluster 0 seems to consist of player that generally have low scoring performance and come off the bench and are backups considered in the 2nd or 3rd unit of a team.
+
+![image](https://user-images.githubusercontent.com/23053768/161850116-540d4fde-0081-45e3-a2dd-a0c81d5aa787.png)
+
+Cluster 1 could be players are support the players in cluster 2, 5 and 6 with players like Lonzo Ball, Carmelo Anthony, Draymond Green, etc. 
+
+![image](https://user-images.githubusercontent.com/23053768/161850376-f18c2242-ea32-4e02-b86d-69aadb642fff.png)
+
+Cluster 3 and 4 seems to have players that generally don't put up big performances with Cluster 4 being the lower end of the spectrum.
+
+![image](https://user-images.githubusercontent.com/23053768/161850746-1cf7e0c6-e980-4048-a272-bfe207c9c8ef.png)
+
+![image](https://user-images.githubusercontent.com/23053768/161850722-962b633d-2529-4d18-8d74-48f3887288e6.png)
+
 
 ### References
 
-- https://www.basketball-reference.com/
-- https://www.nbastuffer.com/
-- https://towardsdatascience.com/predicting-the-outcome-of-nba-games-with-machine-learning-a810bb768f20
+[1] https://www.basketball-reference.com/
+
+[2] https://www.nbastuffer.com/
+
+[3] https://towardsdatascience.com/predicting-the-outcome-of-nba-games-with-machine-learning-a810bb768f20
+
+[4] https://www.basketball-reference.com/leagues/NBA_2021.html
+
+[5] https://www.nba.com/news/nikola-jokic-wins-2020-21-kia-nba-most-valuable-player-award
+
 
 
 ### Proposed timeline and Responsibilities
@@ -130,9 +163,9 @@ Values closer to 0 imply better clustering in the case of Davies-Bouldin index. 
 
 | Member             | Responsiblity                           |
 | ------------------ | --------------------------------------- |
-| Adrian Thinnyun    | Predictional Analysis/Project Video    |
-| Brahmi Dwivedi     | Data Collection/Data Cleaning           |
-| Omkar Prabhu       | Unsupervised Data Curation and Inital Clustering method - PCA & KMeans |
-| Rahul Shenoy       | Data Cleaning/Model Generation         |
-| Yashodeep Mahapata | Project Report/Predictional Analysis   |
+| Adrian Thinnyun    | Unsupervised Methods, Supervised - SVM    |
+| Brahmi Dwivedi     | Unsupervised Methods - PCA, Supervised - NN          |
+| Omkar Prabhu       | Unsupervised Data Curation, Clustering (KMeans and PCA), NBA Clustering Discussion |
+| Rahul Shenoy       | Supervised Data Curation        |
+| Yashodeep Mahapata | UnSupervised KMeans Analysis  |
 
