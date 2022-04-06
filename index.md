@@ -1,3 +1,4 @@
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 ## NBA Player Clustering and Game Win Prediction
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/9ehn7Ot--Ds" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
