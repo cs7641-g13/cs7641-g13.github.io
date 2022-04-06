@@ -105,6 +105,8 @@ In supervised methods, we plan to implement:
 
 We will use the outcome of PCA for supervised methods, and analyze how it affects the outcome, by comparing with supervised outcomes without the use of PCA.
 
+The supervised method implements the game winner prediction. We already have data around the teams playing each other and the team stats along with the labels which represents which team wins. We plan on using the output of our unsupervised learning to generate a few consolidated features for each of the players involved in the game and adding these features to our dataset to make more robust game predictions.
+
 ### Results and Discussion
 
 #### PCA analysis
