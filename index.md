@@ -115,6 +115,13 @@ After applying PCA to our dataset, our original set of 45 features was reduced d
 
 ![image](https://user-images.githubusercontent.com/39341245/161835399-e536a6b7-cc78-41f7-b878-47580445934a.png)
 
+Part of the correlation matrix before PCA:
+
+![image](https://user-images.githubusercontent.com/23053768/164111594-0570fe34-740c-42a5-a525-421e8d55807b.png)
+
+Correlation matrix after PCA:
+
+![image](https://user-images.githubusercontent.com/23053768/164111661-cca6ccad-8775-45ee-ae11-225c3e8aa594.png)
 
 #### K-Means analysis
 
