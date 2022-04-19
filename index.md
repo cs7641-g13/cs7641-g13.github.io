@@ -145,7 +145,9 @@ Values closer to 0 imply better clustering in the case of Davies-Bouldin index. 
 
 The first observation was that the players clustered together did not have the same "traditional" positions i.e each cluster has a mix of players in different positions. 
 
-Now Cluster=5 pops out with only 21 players, this cluster in my opinion represents players with distinct performances in the season. Eg. Giannis won the finals MVP, Steph Curry was the scoring leader, Jokic won the regular season MVP, etc. [4]. Players like Bradley Beal, Luka Doncic, etc. were in the All NBA teams. Other players like Julius Randle, Russel Westbrook, etc. were in the MVP conversation [5]
+Now Cluster=5 pops out with only 21 players, this cluster in my opinion represents players with distinct performances in the season. Eg. Giannis won the finals MVP, Steph Curry was the scoring leader, Jokic won the regular season MVP, etc. [4]. Players like Bradley Beal, Luka Doncic, etc. were in the All NBA teams. Other players like Julius Randle, Russel Westbrook, etc. were in the MVP conversation [5].
+
+As the TA pointed out correctly, there are some outliers when looking at players like RJ Barret and Zion Williamson who weren't in the discussion of top-cream of players that season. Possible reasons for this could be because of them starting in all games they played along with other features like effective field goal percentage being as high as the other players here but the exact reason doesn't seem to be clear. Also they could be the lower end of the spectrum here and despite of good overall performances, didn't stand out to be in this dicussion.
 
 ![image](https://user-images.githubusercontent.com/23053768/161846931-8a39c4d9-5453-43a2-bbe1-8ca7d29f75a4.png)
 
