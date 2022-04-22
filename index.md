@@ -86,7 +86,13 @@ An interesting thing to notice is that there was a noteworthy advantage for Home
 
 <img width="324" alt="Screenshot_4" src="https://user-images.githubusercontent.com/32405336/161855809-f4b9b5b2-be9f-40e6-91b2-ed1b0b321b3d.png">
 
-It will be interesting how this advantage will come into play in our model.
+We then realized that this won't be best way features for our supervised model, and rather than having features for the current game, average team statistics for the last 5 would provide more meaning and semantically would make sense as we use previous games for predicting game outcome. We also made an attempt to integrate player stats either in the raw form or some way to get meaning from clustering but couldn't integrate as features for game prediction.
+
+We use the Basketball Reference API [6] to get game details for a season and then used the date to get box-scores and statistics for each team. This was followed by aggregating the stats for the current home and away teams in a game over their last 5 games. Thus for each game across 3 seasons (2021-22, 2020-21 and 2019-20) we now have the following features:
+
+![image](https://user-images.githubusercontent.com/23053768/164774397-3abbb08d-87bc-4eec-a2a3-b9c4acf5a223.png)
+
+================== WRITE ABOUT ELO ================== 
 
 ### Methods
 
@@ -182,10 +188,11 @@ Cluster 3 and 4 seems to have players that generally don't put up big performanc
 
 [3] https://towardsdatascience.com/predicting-the-outcome-of-nba-games-with-machine-learning-a810bb768f20
 
-[4] https://www.basketball-reference.com/leagues/NBA_2021.html
+[4] https://wwhttps://github.com/jaebradley/basketball_reference_web_scraperw.basketball-reference.com/leagues/NBA_2021.html
 
 [5] https://www.nba.com/news/nikola-jokic-wins-2020-21-kia-nba-most-valuable-player-award
 
+[6] https://github.com/jaebradley/basketball_reference_web_scraper
 
 
 ### Proposed timeline and Responsibilities
@@ -203,8 +210,8 @@ Cluster 3 and 4 seems to have players that generally don't put up big performanc
 | Member             | Responsiblity                           |
 | ------------------ | --------------------------------------- |
 | Adrian Thinnyun    | Unsupervised Methods, Supervised - SVM    |
-| Brahmi Dwivedi     | Unsupervised Methods - PCA, Supervised - NN          |
-| Omkar Prabhu       | Unsupervised Data Curation, Clustering (KMeans and PCA), NBA Clustering Discussion |
+| Brahmi Dwivedi     | Unsupervised Methods - PCA, Supervised - CNN          |
+| Omkar Prabhu       | Unsupervised Data Curation, NBA Clustering implementation and discussion, supervised data curation |
 | Rahul Shenoy       | Supervised Data Curation        |
-| Yashodeep Mahapata | UnSupervised KMeans Analysis  |
+| Yashodeep Mahapata | UnSupervised KMeans Analysis, NN  |
 
