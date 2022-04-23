@@ -88,9 +88,9 @@ An interesting thing to notice is that there was a noteworthy advantage for Home
 
 We then realized that this won't be best way features for our supervised model, and rather than having features for the current game, average team statistics for the last 5 would provide more meaning and semantically would make sense as we use previous games for predicting game outcome. We also made an attempt to integrate player stats either in the raw form or some way to get meaning from clustering but couldn't integrate as features for game prediction.
 
-We use the Basketball Reference API [6] to get game details for a season and then used the date to get box-scores and statistics for each team. This was followed by aggregating the stats for the current home and away teams in a game over their last 5 games. Thus for each game across 3 seasons (2021-22, 2020-21 and 2019-20) we now have the following features:
+We use the Basketball Reference API [6] to get game details for a season and then used the date to get box-scores and statistics for each team. But we found that the game details API would give incorrect dates which results in the team not being found when trying to get their box-score. This we manuallt extracted data for 3 seasons (2021-22, 2020-21 and 2019-20) and then gor each game used the API to get box scores for home and away teams. This was followed by aggregating the stats for the current home and away teams in a game over their last 5 games. Thus for each game across 3 seasons we now have the following features:
 
-![image](https://user-images.githubusercontent.com/23053768/164774397-3abbb08d-87bc-4eec-a2a3-b9c4acf5a223.png)
+![image](https://user-images.githubusercontent.com/23053768/164947779-aa89c455-9bb7-4526-bdac-ba4a38e485fa.png)
 
 ================== WRITE ABOUT ELO ================== 
 
@@ -178,6 +178,10 @@ Cluster 3 and 4 seems to have players that generally don't put up big performanc
 ![image](https://user-images.githubusercontent.com/23053768/161850746-1cf7e0c6-e980-4048-a272-bfe207c9c8ef.png)
 
 ![image](https://user-images.githubusercontent.com/23053768/161850722-962b633d-2529-4d18-8d74-48f3887288e6.png)
+
+
+### Conclusions
+
 
 
 ### References
