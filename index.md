@@ -112,8 +112,8 @@ Principal Component Analysis is an unsupervised method to preprocess and reduce 
 
 In supervised methods:
 - Support Vector Machine
-- Fully Connected Neural Network: We implemented Fully connected neural networks of different depths, and performed hyperparameter optimization to obtain best results for game result prediction. We used the library TensorFlow in Python to implement this. 
-- Convolutional Neural Network (CNN): We implemented a 1-D convolutional neural network to perform game result prediction. The python library TensorFlow was used.
+- Fully Connected Neural Network: We implemented Fully connected neural networks of different depths(number of layers), and performed hyperparameter optimization to obtain best results for game result prediction. We used the library TensorFlow in Python to implement this. Fully Connected Neural Networks consist of multiple layers of neurons, where each neuron in one layer is connected to every other neuron in the next layer and the previous layer.
+- 1-D Convolutional Neural Network (CNN): We implemented a 1-D convolutional neural network to perform game result prediction. The python library TensorFlow was used. In 1-D convolution, the convolution operation is performed between the vector and filter (number of filters is a hyperparameter), resulting in an output vector which has as many channels as the number of filters used. The size of the filter is also a hyperparameter. We use 1-D convolution as our input consists of 1-D vectors (as opposed to 2-D or 3-D images for 2-D convolution).
 
 We will use the outcome of PCA for supervised methods, and analyze how it affects the outcome, by comparing with supervised outcomes without the use of PCA.
 
@@ -191,7 +191,12 @@ Cluster 3 and 4 seems to have players that generally don't put up big performanc
 
 #### Fully Connected Neural Network
 
+The fully conntected network used consisted of 5 fully connected layers, with output sizes 100,200,100,50 and 2 respectively. All but the final layer used Rectified Linear Unit as the activation function. The final layer used Softmax as the activation function for classification into one of 2 classes (team A wins vs Team B wins, labelled 0/1). Dropout regularization was used before the last fully connected layer with dropout probability 0.5. Adam optimizer with sparse categorical cross entropy loss function was used for training, with a learning rate of 1e-5. The data was split into training and testing data according to an 80:20 ratio.
 
+The best accuracy obtained for the test data for this model was 60.84%. The following diagrams represent the accuracy and loss plots for the model over 50 epochs:
+
+![image](https://user-images.githubusercontent.com/30110646/165373585-1828b179-8af0-44ca-89e7-e27d6c764e70.png)
+![image](https://user-images.githubusercontent.com/30110646/165373594-64686338-17c4-4371-a698-74c31f4a8872.png)
 
 #### 1-D Convolutional Neural Network
 
