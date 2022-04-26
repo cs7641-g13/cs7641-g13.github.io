@@ -92,7 +92,13 @@ We use the Basketball Reference API [6] to get game details for a season and the
 
 ![image](https://user-images.githubusercontent.com/23053768/164947779-aa89c455-9bb7-4526-bdac-ba4a38e485fa.png)
 
-================== WRITE ABOUT ELO ================== 
+We wanted to get some more information out of the data, specifically a metric to rank the teams amongst each other. A simple system for elo rating was used. The idea was to capture some complexity from the data, but ultimately keep it as general as possible to avoid overfitting. At the start of our dataset, all teams would begin with a standard elo of 1500. This was just a general number that we found would be the most useful. If a team won, they would win elo and the opposition would lose the same amount. It was important that the elo difference was the same, and the overall elo in the whole roster was the same. This would ensure that their rankings would be close to their actual hidden ranking. To capture a little more complexity. We made sure that if a team won by a huge margin then they would gain more elo. After analysing the data, we found that if the score difference at the end of the game was less than 10 points then that meant that the game was pretty close. In this case the winner would only gain 5 points in our elo system. If the score difference was between 10 and 20 then this was an average win, so the winner would receive 10 points. Finally a win with a score difference of +20 meant a huge victory, and this would come with 15 elo points to the winner. In all cases, the losing team would lose the same amount as mentioned before.
+
+Here is some sample data from the beginning of our dataset to get a visualization of how the elo would change. Other columns were dropped only for clarity in this image.
+
+//Image here
+
+The elo system helps place teams over our entire dataset. We can consider that teams near 1500 elo are considered average. At the end, we compiled what elo each team had and, it was pretty accurate with how those teams actually performed over that time period. Specifically we found teams and their respective elos like Phoenix Suns 2220, Utah Jazz 2265, Milwaukee Bucks 2445 coming out on top. These teams performed well above average over that time frame. While on the other hand, teams like Orlando Magic 650, Detroit Pistons 705, Houston Rockets 850 performed pretty poorly over the same timeframe.
 
 ### Methods
 
