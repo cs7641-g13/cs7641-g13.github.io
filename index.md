@@ -111,7 +111,7 @@ Principal Component Analysis is an unsupervised method to preprocess and reduce 
 - **K-Means clustering**: We ran the **K-Means clustering** algorithm on our player data in order to see if we could identify meaningful patterns among players that might help classify them into useful roles/categories. K-means clustering is a method aimed to cluster n data-points into k clusters. The clustering is performed such that every data-point belongs to the cluster with the nearest mean (The mean of each cluster is used to represent the “cluster center”. Often, k random points from the data are used as the initial means). K-means clustering works to minimize the within-cluster variance. For this purpose, we leveraged the scikit-learn implementation of K-Means. Notably, this implementation does not use the classical EM-style algorithm for K-Means but rather the “Elkan” variation, which exploits the triangle inequality in order to converge more quickly. By default, this implementation assumes a goal of K=8 clusters, but we use the elbow method in order to find a more optimal number of clusters.
 
 In supervised methods:
-- Support Vector Machine
+- Support Vector Classifier: We implemented a Support Vector Classifier (SVC), and performed a grid search over various hyperparameters including kernel and regularization level to achieve the best game prediction performance. Both the SVC itself as well as the grid search were implemented in Python using the scikit-learn library.
 - Fully Connected Neural Network: We implemented Fully connected neural networks of different depths(number of layers), and performed hyperparameter optimization to obtain best results for game result prediction. We used the library TensorFlow in Python to implement this. Fully Connected Neural Networks consist of multiple layers of neurons, where each neuron in one layer is connected to every other neuron in the next layer and the previous layer.
 - 1-D Convolutional Neural Network (CNN): We implemented a 1-D convolutional neural network to perform game result prediction. The python library TensorFlow was used. In 1-D convolution, the convolution operation is performed between the vector and filter (number of filters is a hyperparameter), resulting in an output vector which has as many channels as the number of filters used. The size of the filter is also a hyperparameter. We use 1-D convolution as our input consists of 1-D vectors (as opposed to 2-D or 3-D images for 2-D convolution).
 
@@ -185,6 +185,14 @@ Cluster 3 and 4 seems to have players that generally don't put up big performanc
 
 ![image](https://user-images.githubusercontent.com/23053768/161850722-962b633d-2529-4d18-8d74-48f3887288e6.png)
 
+#### Support Vector Classifier
+
+For input to the support vector classifier (SVC), non-numerical features, i.e. team names are converted to one-hot vector representations of size 30 each (there are 30 unique teams in total), and dates are disintegrated into 3 features- day, month and year.
+
+Three different parameters were considered in the grid search parameter optimization: the kernel function used in the algorithm (linear, polynomial, or gaussian rbf), the value of the regularization parameter C (0.03, 0.1, 0.3, 1, 3), and the degree of the kernel function if polynomial (2, 3, 4). The grid search revealed that the best choice of parameters was an SVC using a linear kernel function and a C of 0.1. Since no polynomial kernel function was used, the degree is irrelevant.
+
+The SVC fitted using these parameters achieved an accuracy of 60.00% on the test dataset.
+
 #### Fully Connected Neural Network
 
 For input to the fully connected neural network(FCNN), non-numerical features, i.e. team names are converted to one-hot vector representations of size 30 each (there are 30 unique teams in total), and dates are disintegrated into 3 features- day, month and year.
@@ -211,7 +219,7 @@ The best accuracy for the test dataset obtained was 61.42%. The following diagra
 
 Using player statistics for a particular season we discovered meaningful clusters with KMeans (after using PCA) which can be an alternative to comparing players by their basketball positions. This could potentially be extented to clustering players using their stats across multiple seasons and view how the clusters change. Also, including players from different era's in the NBA like 80-90's with Shaq, Jordan, etc. with current players like LeBron, Durant, etc. to see how they are clustered would be a interesting extension.
 
-For supervised methods, both FCNN and 1-D CNN resulted in slightly higher than 60% accuracy for the test dataset. 1-D CNN performed slightly better than FCNN, but not by a huge margin. While this accuracy is better than a completely random prediction, there is scope for improvement. One of the areas for improvement can be feature engineering- manipulating raw features such that they will help extract more meaningful patterns for game outcome prediction.  Currently, we have summarized last 5 games of each team by averaging raw features for those 5 games, and are using these as features to represent that team. Probably features that contain richer information over a longer time period than 5 games would lead to better outcomes.
+For supervised methods, both FCNN and 1-D CNN resulted in slightly higher than 60% accuracy for the test dataset. 1-D CNN performed slightly better than FCNN, but not by a huge margin. The SVC performed slightly worse than either of the neural networks at exactly 60% test accuracy, but again not by a huge margin. While this accuracy is better than a completely random prediction, there is scope for improvement. One of the areas for improvement can be feature engineering- manipulating raw features such that they will help extract more meaningful patterns for game outcome prediction.  Currently, we have summarized last 5 games of each team by averaging raw features for those 5 games, and are using these as features to represent that team. Probably features that contain richer information over a longer time period than 5 games would lead to better outcomes.
 
 ### References
 
@@ -242,7 +250,7 @@ For supervised methods, both FCNN and 1-D CNN resulted in slightly higher than 6
 
 | Member             | Responsiblity                           |
 | ------------------ | --------------------------------------- |
-| Adrian Thinnyun    | Unsupervised Methods, Supervised - SVM    |
+| Adrian Thinnyun    | Unsupervised Methods, Supervised - SVC    |
 | Brahmi Dwivedi     | Unsupervised Methods - PCA, Supervised - CNN          |
 | Omkar Prabhu       | Unsupervised Data Curation, NBA Clustering implementation and discussion, supervised data curation |
 | Rahul Shenoy       | Supervised Data Curation, Supervised Data Feature Engineering       |
