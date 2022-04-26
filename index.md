@@ -209,8 +209,9 @@ The best accuracy for the test dataset obtained was 61.42%. The following diagra
 
 ### Conclusions
 
-For supervised methods, both FCNN and 1-D CNN resulted in slightly higher than 60% accuracy for the test dataset. 1-D CNN performed slightly better than FCNN, but not by a huge margin. While this accuracy is better than a completely random prediction, there is scope for improvement. One of the areas for improvement can be feature engineering- manipulating raw features such that they will help extract more meaningful patterns for game outcome prediction.  Currently, we have summarized last 5 games of each team by averaging raw features for those 5 games, and are using these as features to represent that team. Probably features that contain richer information over a longer time period than 5 games would lead to better outcomes.
+Using player statistics for a particular season we discovered meaningful clusters with KMeans (after using PCA) which can be an alternative to comparing players by their basketball positions. This could potentially be extented to clustering players using their stats across multiple seasons and view how the clusters change. Also, including players from different era's in the NBA like 80-90's with Shaq, Jordan, etc. with current players like LeBron, Durant, etc. to see how they are clustered would be a interesting extension.
 
+For supervised methods, both FCNN and 1-D CNN resulted in slightly higher than 60% accuracy for the test dataset. 1-D CNN performed slightly better than FCNN, but not by a huge margin. While this accuracy is better than a completely random prediction, there is scope for improvement. One of the areas for improvement can be feature engineering- manipulating raw features such that they will help extract more meaningful patterns for game outcome prediction.  Currently, we have summarized last 5 games of each team by averaging raw features for those 5 games, and are using these as features to represent that team. Probably features that contain richer information over a longer time period than 5 games would lead to better outcomes.
 
 ### References
 
