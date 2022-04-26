@@ -187,7 +187,9 @@ Cluster 3 and 4 seems to have players that generally don't put up big performanc
 
 #### Fully Connected Neural Network
 
-The fully conntected network used consisted of 5 fully connected layers, with output sizes 100,200,100,50 and 2 respectively. All but the final layer used Rectified Linear Unit as the activation function. The final layer used Softmax as the activation function for classification into one of 2 classes (team A wins vs Team B wins, labelled 0/1). Dropout regularization was used before the last fully connected layer with dropout probability 0.5. Adam optimizer with sparse categorical cross entropy loss function was used for training, with a learning rate of 1e-5. The data was split into training and testing data according to an 80:20 ratio.
+For input to the fully connected neural network(FCNN), non-numerical features, i.e. team names are converted to one-hot vector representations of size 30 each (there are 30 unique teams in total), and dates are disintegrated into 3 features- day, month and year.
+
+The fully connected neural network used consisted of 5 fully connected layers, with output sizes 100,200,100,50 and 2 respectively. All but the final layer used Rectified Linear Unit as the activation function. The final layer used Softmax as the activation function for classification into one of 2 classes (team A wins vs Team B wins, labelled 0/1). Dropout regularization was used before the last fully connected layer with dropout probability 0.5. Adam optimizer with sparse categorical cross entropy loss function was used for training, with a learning rate of 1e-5. The data was split into training and testing data according to an 80:20 ratio.
 
 The final accuracy obtained for the test data for this model was 60.84%. The following diagrams represent the accuracy and loss plots for the model over 50 epochs:
 
@@ -195,6 +197,8 @@ The final accuracy obtained for the test data for this model was 60.84%. The fol
 ![image](https://user-images.githubusercontent.com/30110646/165373594-64686338-17c4-4371-a698-74c31f4a8872.png)
 
 #### 1-D Convolutional Neural Network
+
+For input to the fully connected neural network(FCNN), non-numerical features, i.e. team names are converted to one-hot vector representations of size 30 each (there are 30 unique teams in total), and dates are disintegrated into 3 features- day, month and year.
 
 The 1-D convolutional neural network used had two 1-D convolutional layers, with 32 and 64 filters each respectively. A kernel size of 3 was used with stride as 1. The two convolutional layers were followed by two fully connected layers, having output sizes 200 and 2 respectively. All layers except the last fully connected layer were followed Rectified Linear Unit as the activation function. The last fully connected layer used Softmax as the activation function for classification into one of 2 classes (team A wins vs Team B wins). The learning rate used was 1e-5, and Sparse Categorical Crossentropy loss was used (labels used were 0 and 1). Adam optimizer was used for training. The data was split into training and testing data according to an 80:20 ratio.
 
@@ -205,6 +209,7 @@ The best accuracy for the test dataset obtained was 61.42%. The following diagra
 
 ### Conclusions
 
+For supervised methods, both FCNN and 1-D CNN resulted in slightly higher than 60% accuracy for the test dataset. 1-D CNN performed slightly better than FCNN, but not by a huge margin. While this accuracy is better than a completely random prediction, there is scope for improvement. One of the areas for improvement can be feature engineering- manipulating raw features such that they will help extract more meaningful patterns for game outcome prediction.  Currently, we have summarized last 5 games of each team by averaging raw features for those 5 games, and are using these as features to represent that team. Probably features that contain richer information over a longer time period than 5 games would lead to better outcomes.
 
 
 ### References
