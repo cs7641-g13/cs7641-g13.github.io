@@ -196,8 +196,11 @@ Cluster 3 and 4 seems to have players that generally don't put up big performanc
 #### 1-D Convolutional Neural Network
 
 The 1-D convolutional neural network used had two 1-D convolutional layers, with 32 and 64 filters each respectively. A kernel size of 3 was used with stride as 1. The two convolutional layers were followed by two fully connected layers, having output sizes 200 and 2 respectively. All layers except the last fully connected layer were followed Rectified Linear Unit as the activation function. The last fully connected layer used Softmax as the activation function for classification into one of 2 classes (team A wins vs Team B wins). The learning rate used was 1e-5, and Sparse Categorical Crossentropy loss was used (labels used were 0 and 1). Adam optimizer was used for training. The data was split into training and testing data according to an 80:20 ratio.
+
 The best accuracy for the test dataset obtained was 61.42%. The following diagrams represent the accuracy and loss plots for the model over 50 epochs:
 
+![image](https://user-images.githubusercontent.com/30110646/165359304-cae02d97-d996-4da6-a587-d3ef3c38b805.png)
+![image](https://user-images.githubusercontent.com/30110646/165359349-396d155b-f9c2-476b-b8fd-46672f3344b8.png)
 
 ### Conclusions
 
