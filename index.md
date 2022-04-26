@@ -193,7 +193,7 @@ Cluster 3 and 4 seems to have players that generally don't put up big performanc
 
 The fully conntected network used consisted of 5 fully connected layers, with output sizes 100,200,100,50 and 2 respectively. All but the final layer used Rectified Linear Unit as the activation function. The final layer used Softmax as the activation function for classification into one of 2 classes (team A wins vs Team B wins, labelled 0/1). Dropout regularization was used before the last fully connected layer with dropout probability 0.5. Adam optimizer with sparse categorical cross entropy loss function was used for training, with a learning rate of 1e-5. The data was split into training and testing data according to an 80:20 ratio.
 
-The best accuracy obtained for the test data for this model was 60.84%. The following diagrams represent the accuracy and loss plots for the model over 50 epochs:
+The final accuracy obtained for the test data for this model was 60.84%. The following diagrams represent the accuracy and loss plots for the model over 50 epochs:
 
 ![image](https://user-images.githubusercontent.com/30110646/165373585-1828b179-8af0-44ca-89e7-e27d6c764e70.png)
 ![image](https://user-images.githubusercontent.com/30110646/165373594-64686338-17c4-4371-a698-74c31f4a8872.png)
