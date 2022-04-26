@@ -96,7 +96,7 @@ We wanted to get some more information out of the data, specifically a metric to
 
 Here is some sample data from the beginning of our dataset to get a visualization of how the elo would change. Other columns were dropped only for clarity in this image.
 
-//Image here
+<img width="912" alt="Screenshot_1" src="https://user-images.githubusercontent.com/32405336/165234034-9c509927-369b-43d1-9147-37f4b9aca249.png">
 
 The elo system helps place teams over our entire dataset. We can consider that teams near 1500 elo are considered average. At the end, we compiled what elo each team had and, it was pretty accurate with how those teams actually performed over that time period. Specifically we found teams and their respective elos like Phoenix Suns 2220, Utah Jazz 2265, Milwaukee Bucks 2445 coming out on top. These teams performed well above average over that time frame. While on the other hand, teams like Orlando Magic 650, Detroit Pistons 705, Houston Rockets 850 performed pretty poorly over the same timeframe.
 
