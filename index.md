@@ -115,10 +115,6 @@ In supervised methods:
 - Fully Connected Neural Network: We implemented Fully connected neural networks of different depths(number of layers), and performed hyperparameter optimization to obtain best results for game result prediction. We used the library TensorFlow in Python to implement this. Fully Connected Neural Networks consist of multiple layers of neurons, where each neuron in one layer is connected to every other neuron in the next layer and the previous layer.
 - 1-D Convolutional Neural Network (CNN): We implemented a 1-D convolutional neural network to perform game result prediction. The python library TensorFlow was used. In 1-D convolution, the convolution operation is performed between the vector and filter (number of filters is a hyperparameter), resulting in an output vector which has as many channels as the number of filters used. The size of the filter is also a hyperparameter. We use 1-D convolution as our input consists of 1-D vectors (as opposed to 2-D or 3-D images for 2-D convolution).
 
-We will use the outcome of PCA for supervised methods, and analyze how it affects the outcome, by comparing with supervised outcomes without the use of PCA.
-
-The supervised method implements the game winner prediction. We already have data around the teams playing each other and the team stats along with the labels which represents which team wins. We plan on using the output of our unsupervised learning to generate a few consolidated features for each of the players involved in the game and adding these features to our dataset to make more robust game predictions.
-
 ### Results and Discussion
 
 #### PCA analysis
