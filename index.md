@@ -223,6 +223,6 @@ Cluster 3 and 4 seems to have players that generally don't put up big performanc
 | Adrian Thinnyun    | Unsupervised Methods, Supervised - SVM    |
 | Brahmi Dwivedi     | Unsupervised Methods - PCA, Supervised - CNN          |
 | Omkar Prabhu       | Unsupervised Data Curation, NBA Clustering implementation and discussion, supervised data curation |
-| Rahul Shenoy       | Supervised Data Curation        |
+| Rahul Shenoy       | Supervised Data Curation, Supervised Data Feature Engineering       |
 | Yashodeep Mahapata | UnSupervised KMeans Analysis, NN  |
 
