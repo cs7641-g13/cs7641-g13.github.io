@@ -104,16 +104,16 @@ The elo system helps place teams over our entire dataset. We can consider that t
 
 In unsupervised methods:
 
-We plan to implement **Principal Component Analysis** (PCA) as a “preprocessing step”, which should help us reduce the dimensionality of features to use for clustering/classification. 
+- **Principal Component Analysis**: We implemented **Principal Component Analysis** (PCA) as a “preprocessing step”, which should help us reduce the dimensionality of features to use for clustering/classification. 
 
 Principal Component Analysis is an unsupervised method to preprocess and reduce the dimensionality of high-dimensional datasets like the one we have. We compute the principal components of the data, and use them to perform a change of basis on the data. Principal components are a sequence of unit vectors where the i-th vector is along the direction of the line that fits the data best, while also being orthogonal to the  (i-1)-th vector. From this, we can infer that the first vector would be the vector along the direction of maximum variance in the data. For dimensionality reduction, we project each data point onto only the first few principal components, while preserving as much data variance as possible.
 
-We ran the **K-Means clustering** algorithm on our player data in order to see if we could identify meaningful patterns among players that might help classify them into useful roles/categories. K-means clustering is a method aimed to cluster n data-points into k clusters. The clustering is performed such that every data-point belongs to the cluster with the nearest mean (The mean of each cluster is used to represent the “cluster center”. Often, k random points from the data are used as the initial means). K-means clustering works to minimize the within-cluster variance. For this purpose, we leveraged the scikit-learn implementation of K-Means. Notably, this implementation does not use the classical EM-style algorithm for K-Means but rather the “Elkan” variation, which exploits the triangle inequality in order to converge more quickly. By default, this implementation assumes a goal of K=8 clusters, but we use the elbow method in order to find a more optimal number of clusters.
+- **K-Means clustering**: We ran the **K-Means clustering** algorithm on our player data in order to see if we could identify meaningful patterns among players that might help classify them into useful roles/categories. K-means clustering is a method aimed to cluster n data-points into k clusters. The clustering is performed such that every data-point belongs to the cluster with the nearest mean (The mean of each cluster is used to represent the “cluster center”. Often, k random points from the data are used as the initial means). K-means clustering works to minimize the within-cluster variance. For this purpose, we leveraged the scikit-learn implementation of K-Means. Notably, this implementation does not use the classical EM-style algorithm for K-Means but rather the “Elkan” variation, which exploits the triangle inequality in order to converge more quickly. By default, this implementation assumes a goal of K=8 clusters, but we use the elbow method in order to find a more optimal number of clusters.
 
-In supervised methods, we plan to implement:
+In supervised methods:
 - Support Vector Machine
-- Fully Connected Neural Network 
-- Convolutional Neural Network (CNN)
+- Fully Connected Neural Network: We implemented Fully connected neural networks of different depths, and performed hyperparameter optimization to obtain best results for game result prediction. We used the library TensorFlow in Python to implement this. 
+- Convolutional Neural Network (CNN): We implemented a 1-D convolutional neural network to perform game result prediction. The python library TensorFlow was used.
 
 We will use the outcome of PCA for supervised methods, and analyze how it affects the outcome, by comparing with supervised outcomes without the use of PCA.
 
@@ -188,6 +188,15 @@ Cluster 3 and 4 seems to have players that generally don't put up big performanc
 ![image](https://user-images.githubusercontent.com/23053768/161850746-1cf7e0c6-e980-4048-a272-bfe207c9c8ef.png)
 
 ![image](https://user-images.githubusercontent.com/23053768/161850722-962b633d-2529-4d18-8d74-48f3887288e6.png)
+
+#### Fully Connected Neural Network
+
+
+
+#### 1-D Convolutional Neural Network
+
+The 1-D convolutional neural network used had two 1-D convolutional layers, with 32 and 64 filters each respectively. A kernel size of 3 was used with stride as 1. The two convolutional layers were followed by two fully connected layers, having output sizes 200 and 2 respectively. All layers except the last fully connected layer were followed Rectified Linear Unit as the activation function. The last fully connected layer used Softmax as the activation function for classification into one of 2 classes (team A wins vs Team B wins). The learning rate used was 1e-5, and Sparse Categorical Crossentropy loss was used (labels used were 0 and 1). Adam optimizer was used for training. The data was split into training and testing data according to an 80:20 ratio.
+The best accuracy for the test dataset obtained was 61.42%. The following diagrams represent the accuracy and loss plots for the model over 50 epochs:
 
 
 ### Conclusions
