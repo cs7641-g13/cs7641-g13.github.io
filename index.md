@@ -144,6 +144,7 @@ The dataset used for K-Means analysis has 5 features obtained after the feature 
 Because the dataset has 5 features, the clusters cannot be represented on a graph. So for the purpose of demonstration, here are the clusters which just have 2 features out of the 5 plotted. These 2 features have been selected because they retain 94% of the variance of the dataset. This would pretty much give us a good idea around how the clustering has been done.
 
 ![image](https://user-images.githubusercontent.com/25253566/161800524-a3980b7c-a99b-4af7-8c4b-9db1eba09b33.png)
+<img src = "https://user-images.githubusercontent.com/25253566/165320799-f744ed92-9316-48c5-a8aa-ffafd507e269.png" height = "200" width = "250">
 
 As we can see, a few of the clusters are really well defined (the blue, black, red, purple and yellow) while the remaining 2 are a bit scattered around. The popular metric scores around clustering for this data have been evaluated as follows:
 
