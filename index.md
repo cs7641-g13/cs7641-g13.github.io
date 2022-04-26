@@ -146,6 +146,9 @@ Because the dataset has 5 features, the clusters cannot be represented on a grap
 ![image](https://user-images.githubusercontent.com/25253566/161800524-a3980b7c-a99b-4af7-8c4b-9db1eba09b33.png)
 <img src = "https://user-images.githubusercontent.com/25253566/165320799-f744ed92-9316-48c5-a8aa-ffafd507e269.png" height = "200" width = "250">
 
+Here is a pairplot of the clusters with each of the principle components pairwise:
+![pairplot](https://user-images.githubusercontent.com/25253566/165343848-fb80fa9b-4bcf-42c4-8c13-8fbbad09eda0.png)
+
 As we can see, a few of the clusters are really well defined (the blue, black, red, purple and yellow) while the remaining 2 are a bit scattered around. The popular metric scores around clustering for this data have been evaluated as follows:
 
 Davies-Bouldin index: 0.781    
