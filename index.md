@@ -100,6 +100,8 @@ Here is some sample data from the beginning of our dataset to get a visualizatio
 
 The Elo system helps place teams over our entire dataset. We can consider that teams near 1500 Elo are considered average. At the end, we compiled what Elo each team had, and it was pretty accurate with how those teams actually performed over that time period. Specifically we found teams like the Phoenix Suns (2220), the Utah Jazz (2265), and the Milwaukee Bucks (2445) coming out on top. These teams performed well above average over that time frame. While on the other hand, teams like Orlando Magic (650), Detroit Pistons (705), and Houston Rockets (850) performed pretty poorly over the same timeframe.
 
+Thus, finally we used the stats for home and away teams in last five games along with elo_before rating as the input features to our supervised methods. We dropped the home_points, away_points, after_elo and as they would directly correspond to the outcome.
+
 ### Methods
 
 In unsupervised methods:
